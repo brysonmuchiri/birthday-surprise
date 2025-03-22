@@ -1,0 +1,38 @@
+ body {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+ }
+
+ .container {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+ }
+
+ h1 {
+    font-size: 3rem;
+    animation: glow 1.5s infinite alternate;
+ }
+
+ .cake {
+    width: 200px;
+    margin-top: 20px;
+ }
+
+ @keyframes glow {
+    0% { color: #ff0; }
+    100% { color: #ff69b4; }
+ }
+
+ /* Fireworks Canvas */
+ canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+ }
